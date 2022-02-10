@@ -1,0 +1,239 @@
+/* Landing page */
+
+.section-top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-image: linear-gradient(
+                     rgba(20, 20, 20, 0.767), 
+                     rgba(20, 20, 20, 0.774)),
+                     url('Pictures/coffee-cake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 30s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: linear-gradient(
+                     rgba(20, 20, 20, 0.767), 
+                     rgba(20, 20, 20, 0.774)),
+                     url('Pictures/coffee-cake.jpg');
+    }
+    20%{
+        background-image: linear-gradient(
+                     rgba(20, 20, 20, 0.767), 
+                     rgba(20, 20, 20, 0.774)),
+                     url('Pictures/strawberry-pie-cake.jpg');
+    }
+    40%{
+        background-image: linear-gradient(
+                     rgba(20, 20, 20, 0.767), 
+                     rgba(20, 20, 20, 0.774)),
+                     url('Pictures/cake-cake.jpg');
+    }
+    60%{
+        background-image: linear-gradient(
+                     rgba(20, 20, 20, 0.767), 
+                     rgba(20, 20, 20, 0.774)),
+                     url('Pictures/birthday-cake1.jpg');
+    }
+    80%{
+        background-image: linear-gradient(
+                     rgba(20, 20, 20, 0.767), 
+                     rgba(20, 20, 20, 0.774)),
+                     url('Pictures/birthday-cake2.jpg');
+    }
+
+}
+
+/* login */
+
+#main {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
+}
+
+#Login{
+    width: 400px;
+    height: 420px;
+    padding: 10px;
+    /* display: none; */
+}
+
+.Logged{
+    color: white;
+    font-weight: 300;
+    background: #50a3a2;
+    position: absolute;
+    width: 1365px;
+    height: 657px;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
+}
+
+.Loggedh1{
+    margin-top: 250px;
+    font-family: "Pacifico"
+}
+
+.Loggedlink{
+    margin-top: 50px;
+    margin-left: 625px;
+}
+
+.pad{
+    margin-bottom: 30px;
+}
+
+.pade{
+    margin-bottom: 20px;
+}
+#Loginform {
+    padding: 30px;
+}
+
+
+.formControl{
+    width: 75%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    margin-left: 55px;
+}
+
+.inputbox {
+    height:35px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+.btnn{
+    width: 35%;
+    /* height: 35px; */
+    /* border: none; */
+    margin-left: 135px;
+    border-radius: 15px;
+}
+
+.btnn-primary{
+    background: lightcoral;
+    color: white;
+}
+
+#Login-tab {
+    padding: 15px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.active_{
+    background: lightcoral;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.textcenter , p {
+    text-align: center;
+}
+
+.logintext , p {
+    font-size: 12px;
+    margin: 10px;
+    color: black;
+}
+
+/* Sign Up */
+
+
+#register_Customer {
+    height: 500px;
+    padding: 20px;
+    width:800px;
+    display: none;
+}
+
+#register_Baker {
+    padding: 20px;
+    width: 800px;
+    height: 620px;
+    display: none;
+}
+
+.form_m-control{
+    width: 350px;
+    box-sizing: content-box;
+}
+
+.f_r{
+    margin-top: -60px;
+}
+
+.inputbox_ {
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    height:35px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+.btns{
+    width: 50%;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 200px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: uppercase;
+}
+
+.btns-primary{
+    background: lightcoral;
+    color: white;
+}
+
+#customer-tab, #baker-tab {
+    margin-bottom: 40px;
+    padding: 15px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#customer-tab:hover, #baker-tab:hover{
+    background-color: blue;
+}
+
+.registertext {
+    font-size: 12px;
+    margin: 10px;
+    color: black;
+}
+
+#baker-address{
+    height: 70px;
+}
+#baker-message{
+    height: 80px;
+}

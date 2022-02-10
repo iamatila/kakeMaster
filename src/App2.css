@@ -1,0 +1,394 @@
+/* Contact  */
+
+#msform{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 950px;
+    margin: 0 auto; 
+    text-align: center;
+    position: relative;
+}
+
+#msform input, #msform textarea{
+    padding: 15px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    margin-bottom: 10px;
+    
+    box-sizing: border-box;
+    font-family: montserrat;
+    color:#2c3e50;
+    font-size: 13px;
+}
+#me{
+    margin-left: 255px;
+    display: block;
+    width: 50%;
+}
+
+.dee{
+    margin-top: 20px;
+}
+/*Contact buttons*/
+#msform .action-button{
+    width: 50%;
+    background: #27ae60;
+    font-weight: bold;
+    color: white;
+    border:0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+
+/* Contact headings*/
+.fs-title{
+    font-size:40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.fs-subtitle{
+    font-weight: normal;
+    color:#666;
+    margin-bottom: 20px;
+}
+
+/* Cake Builder */
+
+.cakeShape{
+    margin: 20px;
+}
+
+.CakeBuilder{
+    /*font-family: montserrat, arial, verdana;
+    Image only BG fallback*/ 
+    background-image: url(Pictures/sponge_cake.jpg); 
+    background-size: cover;
+}
+
+/*form styles*/
+#ms_form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 1250px;
+    margin: 0 auto; 
+    text-align: center;
+    position: relative;
+}
+#ms_form fieldset{
+    background: white;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 85%;
+    margin: 0 8%;
+
+    /*stacking fieldsset above each other 
+    position: absolute; */
+}
+
+/*hide all except first fieldset*/
+/* #ms_form fieldset:not(:first-of-type){
+    display: none;
+} */
+/*inputs*/
+#ms_form input, #ms_form textarea{
+    padding: 15px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    margin-bottom: 10px;
+
+    box-sizing: border-box;
+    font-family: montserrat;
+    color:#2c3e50;
+    font-size: 13px;
+}
+#me{
+    width: 50%;
+}
+/*buttons*/
+#ms_form .action-button{
+    width: 50%;
+    background: #27ae60;
+    font-weight: bold;
+    color: white;
+    border:0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#ms_form .action-button:hover, #ms_form .action-button:focus{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+
+/*headings*/
+/* .fs-title{
+    font-size:30px;
+    text-transform: uppercase;
+    color: #2c3e50;
+    margin-bottom: 15px;
+
+} */
+/*
+.fs-subtitle{
+    font-weight: normal;
+    font-size: 15px;
+    color:#666;
+    margin-bottom: 20px;
+}
+*/
+/*progessbar*/
+#progressbar{
+    margin-bottom: 30px;
+    overflow:hidden;
+    /*CSS counter to number the steps*/
+    counter-reset: step;
+    width: 1250px;
+}
+/* #li{
+    margin-right: 10px;
+} */
+#progressbar li {
+    list-style-type: none;
+    color: green;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 14%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display:block;
+    font-size: 10px;
+    color:#333;
+    background:white;
+    border-radius: 3px;
+    margin:0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white; 
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+} 
+
+#progressbar li:first-child:after{
+    /*connector not needed before the first step*/
+    content:none;
+}
+/*making active/ completed step green*/
+/*the number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after{
+    background: #27ae60;
+    color: white;
+}
+
+#country{
+    margin: 35px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#state{
+    margin: 15px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* .cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+*/
+
+.round_cake,.square_cake,.rectangle_cake,.loaf_cake,.bundt_cake,.jellyroll_cake,.love_cake{
+    background-color: lightgreen;
+    border-radius: 20px;
+    color: black;
+    height: auto;
+    width: center ;
+    padding: 10px;
+    margin: 15px;
+    font-size: 14px;
+}
+.square_cake{
+    font-size: 16px;
+}
+#cakez{
+    font-size: 20px;
+}
+
+/* #rc,#sc,#rec,#bc,#lc,#jrc,#lsc,#osc{
+    display:inline-block;
+} */
+.cc-selector-2, .cake_size {
+    margin-bottom: 40px;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+/* .roundcake {background-image: url("Pictures/Custom_Cake_Round.jpg");  
+            border-radius: 25px;
+}
+.squarecake{background-image:url("Pictures/Custom_square_cake.jpg"); 
+            border-radius: 25px;
+}
+.rectanglecake {background-image: url("Pictures/Custom_rectangle_cake.jpg");  
+    border-radius: 25px;
+}
+.bundtcake {background-image: url("Pictures/Custom_bundt_cake.jpg");  
+    border-radius: 25px;
+}
+.loafcake{background-image:url("Pictures/Custom_loaf_cake.jpg"); 
+    border-radius: 25px;
+}
+.jellyrollcake{background-image:url("Pictures/Custom_jellyroll_cake.jpg"); 
+    border-radius: 25px;
+}
+.loveshapecake{background-image:url("Pictures/Custom_love_cake.jpg"); 
+    border-radius: 25px;
+}
+.othershapecake{background-image:url("Pictures/Custom_square_cake.jpg"); 
+    border-radius: 25px;
+} */
+
+
+.cc-selector-2 input:active +.shape, .cc-selector input:active +.shape{opacity: .9;}
+.cc-selector-2 input:checked +.shape, .cc-selector input:checked +.shape{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.shape{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    /*-webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);*/
+}
+.shape:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+
+#cakesize{
+    margin-left: 30px;
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:30px;}
+* { font-family:monospace; }
+.cc-selector-2 input{ margin:5px 0 0 30px; }
+.cc-selector-2 label{ margin-left: 7px; width: 100px; height: 100px;}
+span.cc{ color:#6d84b4 }
+
+
+label { display: inline-block }
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  border-radius: 25px;
+  width: 100px;
+  height: 100px;
+}
+
+.cake_content, .cake_layers{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid blue;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .section-1 .card{
+        width: 14rem;
+    }
+
+    .section-4 .col-md-7 img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left:15%;
+    }
+
+    .site-btn{
+        margin-left: 15%;
+    }
+
+    .section-1 .heading-1, .section-2 .heading-2 {
+        font-size: 25px;
+    }
+
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+
+    .section-1 .card{
+        width: 15rem;
+    }
+
+    .section-2 .heading-1, .section-2 .para{
+        color: black;
+    }
+
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+    }
+
+    /* footer input[type="button"]{
+        margin-left: 5%;
+    } */
+
+}
